@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Nicolas Sommer // 6to B Colegio San Jose // nicolassommer@colegiodesanjose.edu.ar
+        Ejercicio 20:
+Ingresar por teclado el nombre de alguno de estos tres diarios de la república
+Argentina y redireccionar la página según corresponda al diario cargado.
+(Utilizar el comando “location.href”)
+     -->
+    <script>
+      let input = prompt('Ingrese clarin, infobae o ole: ').toLowerCase();
+      if (input == 'clarin') {
+        location.href = 'https://www.clarin.com/';
+      } else if (input == 'infobae') {
+        location.href = 'https://www.infobae.com/';
+      } else if (input == 'ole') {
+        location.href = 'https://www.ole.com.ar/';
+      } else {
+        document.write('EL diario ingresado no es correcto');
+      }
+    </script>
+  </body>
+</html>

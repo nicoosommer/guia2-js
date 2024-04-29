@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Nicolas Sommer // 6to B Colegio San Jose // nicolassommer@colegiodesanjose.edu.ar
+        Ejercicio 22:
+Ingresar el precio de un producto, si tiene un valor mayor o igual a $2500 aplicarle un
+descuento del 10%. En el caso que el producto tenga un precio menor efectuarle solo
+un descuento del 5%. Informar al usuario el monto final al abonar y el importe
+descontado.
+     -->
+    <script>
+      let precio = parseInt(prompt('Ingrese el precio del producto: '));
+      let costo, descuento;
+      if (precio >= 2500) {
+        costo = precio * 0.9;
+        descuento = precio * 0.1;
+      } else {
+        costo = precio * 0.95;
+        descuento = precio * 0.05;
+      }
+      document.write(
+        'El monto final a abonar es de $' +
+          costo +
+          ' y se le aplico un descuento de $' +
+          descuento
+      );
+    </script>
+  </body>
+</html>

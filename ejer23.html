@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Nicolas Sommer // 6to B Colegio San Jose // nicolassommer@colegiodesanjose.edu.ar
+        Ejercicio 23:
+Realizar un programa que solicite el ingreso de tres notas de un alumno e informar si
+su estado es “promocionado”, “regular” o “reprobado”. Si su promedio es superior a 7
+se considera que está promocionado, si está entre 4 y ese valor estaría regular y
+cualquier nota inferior a 4 sería reprobado.
+     -->
+    <script>
+      let num1 = parseInt(prompt('Ingrese la nota 1: '));
+      let num2 = parseInt(prompt('Ingrese la nota 2: '));
+      let num3 = parseInt(prompt('Ingrese la nota 3: '));
+      let promedio = (num1 + num2 + num3) / 3;
+      if (promedio >= 7) {
+        document.write('Promocionado con ' + promedio);
+      } else if (promedio >= 4) {
+        document.write('Regular con ' + promedio);
+      } else {
+        document.write('Desaprobado con ' + promedio);
+      }
+    </script>
+  </body>
+</html>

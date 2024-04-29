@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        Nicolas Sommer // 6to B Colegio San Jose // nicolassommer@colegiodesanjose.edu.ar
+        Ejercicio 18:
+Confeccionar un programa que muestre la cantidad de horas que tiene un día, la
+cantidad de minutos y la cantidad de segundos.
+La cantidad de días se ingresa por teclado.
+    -->
+    <script>
+      let horas = parseInt(24);
+      let minutos = parseInt(24 * 60);
+      let segundos = parseInt(24 * 60 * 60);
+      let dias = prompt('Ingrese la cantidad de días: ');
+      document.write(
+        dias +
+          ' dias se pueden expresar como ' +
+          horas * dias +
+          ' horas, ' +
+          minutos * dias +
+          ' minutos y como ' +
+          segundos * dias +
+          ' segundos'
+      );
+    </script>
+  </body>
+</html>

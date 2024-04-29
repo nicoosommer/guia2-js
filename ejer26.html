@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Nicolas Sommer // 6to B Colegio San Jose // nicolassommer@colegiodesanjose.edu.ar
+        Ejercicio 26:
+Realizar un programa en Java script que permita ingresar al usuario el nombre de una
+palabra. En el caso que la persona ingrese “let”, ”if” ó ”else” informar que se trata de
+una palabra clave o también que no lo es
+
+     -->
+    <script>
+      let palabra = prompt('Ingrese una palabra: ');
+      if (palabra == 'let' || palabra == 'if' || palabra == 'else') {
+        document.write('La palabra que ingreso es una palabra clave reservada');
+      } else {
+        document.write(
+          'La plabra que ingreso no es una palabra clave reservada'
+        );
+      }
+    </script>
+  </body>
+</html>
